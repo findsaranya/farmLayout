@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+
+        }
+        *,::before,::after{
+            box-sizing: border-box;
+        }
+        body{
+    
+            background-color: skyblue;
+            background-image: url('Sun.gif');
+            background-repeat: no-repeat;
+            background-position: 71% -112%,left center;
+        }
+        body::before{
+            content:'';
+            position:absolute;
+        }
+        body::after{
+                content:'';
+                background-color: #00c200;
+                background-image: url('house.gif'),url('sheep-006.gif'),url('cow_41.gif');
+                background-repeat: no-repeat;
+              background-position: 69% 49%,right bottom,81% center;
+                position: fixed;
+                width: 100%;
+                height: 25%;
+                border: 1px solid gold;
+                bottom: 0;
+
+        }
+        .banner{
+            padding:0.8em;
+            
+        }
+        h1{
+            text-align:center;
+            color:red;
+            text-shadow: 3px 0px 0px #000;
+            font-size:3em;
+            font-weight: bold;
+        }
+        img{
+            position:absolute;
+        }
+        .sheep{
+           left: 16%;
+            bottom: 8%;
+            z-index: 1;
+            display: block;
+            width: 10%;
+        }
+        .cow{
+            left: 34%;
+            bottom: 25%;
+        }
+        .tree{
+           z-index: 1;
+          right: 75px;
+           top: 46%;
+        }
+       
+    </style>
+</head>
+<body>
+    
+    <div class="banner">
+        <h1>Farm Party!!</h1>
+    </div>
+    <img src='sheep-006.gif' alt="sheepImg" class="sheep">
+    <img src='cow_41.gif' alt="cowImg" class="cow">
+    <img src='1195427467858604967PeterM_Tree.svg.med.png' alt="treeImg" class="tree">
